@@ -1,0 +1,1123 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+    color: #111;
+    font-family: 'Nunito', Arial, sans-serif;
+}
+a{
+    color: inherit;
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header, section{
+    width: 1170px;
+    margin: 0px auto;
+}
+header{
+    height: 48px;
+    border: 1px solid #111;
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.logotip{
+    font-size: 21px;
+    letter-spacing: 0.02em;
+    margin: 0px 14px 0px 2px;
+}
+.logotip span{
+    color: rgb(230, 57, 70);
+}
+nav{
+    display: flex;
+    gap: 16px;
+    margin-right: auto;
+}
+nav a{
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding-top: 4px;
+}
+nav a:hover, .kontakt:hover{
+    color: rgb(230, 57, 70);
+}
+.kontakt{
+    font-size: 13px;
+    margin-right: 28px;
+}
+.knopka_shapki{
+    background-color: rgb(230, 57, 70);
+    color: white;
+    height: 47px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.knopka_shapki:hover, .knopka:hover, #knopka:hover{
+    background-color: rgb(200, 35, 48);
+}
+.burger{
+    display: none;
+}
+.knopka{
+    display: inline-block;
+    background-color: rgb(230, 57, 70);
+    color: white;
+    width: 325px;
+    padding: 17px 0px;
+    text-align: center;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+.nadpis{
+    color: rgb(230, 57, 70);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-family: 'Open Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.nadpis::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background-color: rgb(230, 57, 70);
+}
+.glavnaya{
+    display: flex;
+    justify-content: space-between;
+    padding: 104px 0px 67px;
+}
+.glavnaya_sleva .nadpis{
+    margin-left: 8px;
+    margin-bottom: 4px;
+}
+.glavnaya h1{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 72px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    margin-bottom: 18px;
+}
+.glavnaya h1 span{
+    display: block;
+    color: rgb(230, 57, 70);
+}
+.glavnaya_sleva .knopka{
+    margin-left: 8px;
+}
+.podskazka{
+    font-size: 12px;
+    color: #666;
+    line-height: 21px;
+    width: 400px;
+    margin: 22px 0px 0px 8px;
+}
+.glavnaya_sprava{
+    width: 440px;
+    margin-top: 118px;
+}
+.glavnaya_sprava h3{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    color: rgb(230, 57, 70);
+    margin-bottom: 8px;
+}
+.glavnaya_sprava li{
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    line-height: 29px;
+    white-space: nowrap;
+    padding-left: 28px;
+    position: relative;
+}
+.glavnaya_sprava li::before{
+    content: '';
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    width: 12px;
+    height: 6px;
+    border-left: 2px solid rgb(240, 90, 40);
+    border-bottom: 2px solid rgb(240, 90, 40);
+    transform: rotate(-45deg);
+}
+.cifry{
+    display: flex;
+    border: 1px solid #111;
+    height: 325px;
+}
+.cifra{
+    width: 300px;
+    border-left: 1px solid #111;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+.cifra:first-child{
+    border-left: none;
+}
+.cifra:last-child{
+    width: 270px;
+}
+#c1{
+    background-image: url(img/image20.png);
+}
+#c2{
+    background-image: url(img/image19.png);
+}
+#c3{
+    background-image: url(img/image18.png);
+}
+#c4{
+    background-image: url(img/image17.png);
+}
+.cifra b{
+    font-size: 62px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    margin-left: 2px;
+}
+#c1 b, #c3 b{
+    color: rgb(230, 57, 70);
+}
+.cifra span{
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin: 4px 0px 2px 2px;
+}
+.chto_takoe{
+    padding-top: 160px;
+}
+.chto_takoe h2{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 52px;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    width: 900px;
+    margin-left: 2px;
+    margin-bottom: 22px;
+}
+.plitki{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 4px;
+}
+.plitka{
+    width: 388px;
+    height: 198px;
+    padding: 12px 26px;
+    position: relative;
+}
+.plitka::after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 16px;
+    width: 3px;
+    height: 38px;
+    background-color: rgb(230, 57, 70);
+}
+#p6::after{
+    display: none;
+}
+.temnaya{
+    background-color: #111;
+    color: white;
+}
+.plitka h3{
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 44px;
+}
+.temnaya h3{
+    color: rgb(230, 57, 70);
+}
+.plitka p{
+    font-size: 14px;
+    line-height: 22px;
+    width: 345px;
+    color: #222;
+}
+.temnaya p{
+    color: #ccc;
+}
+#p4 h3{
+    margin-left: -12px;
+}
+#p6{
+    display: flex;
+    align-items: flex-end;
+    padding: 0px 30px 0px 32px;
+}
+#p6 .knopka{
+    margin-bottom: 0px;
+    position: relative;
+    top: -1px;
+}
+.vnutrenniy_blok{
+    padding: 0px 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.vnutrenniy_blok h2{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.15;
+}
+.pomoshch{
+    padding-top: 92px;
+}
+.pomoshch h2{
+    font-size: 38px;
+    padding: 0px 490px 10px 0px;
+    border-bottom: 2px solid #111;
+}
+.zagolovok_bloka{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin: 36px 0px 24px;
+}
+.zagolovok_bloka span{
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+.zagolovok_bloka::after{
+    content: '';
+    flex: 1;
+    height: 1px;
+    background-color: #ddd;
+    order: 1;
+}
+.zagolovok_bloka a{
+    order: 2;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(224, 96, 85);
+}
+.tri_zadachi{
+    display: flex;
+}
+.zadacha{
+    width: 393px;
+    padding: 0px 30px 0px 0px;
+    border-right: 1px solid #ddd;
+    margin-top: 2px;
+}
+.zadacha + .zadacha{
+    padding-left: 34px;
+}
+.zadacha:last-child{
+    border-right: none;
+}
+.zadacha span{
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: rgb(224, 96, 85);
+    display: block;
+    margin-top: 28px;
+}
+.zadacha h3{
+    font-size: 23px;
+    line-height: 27px;
+    margin: 14px 0px 14px;
+}
+.zadacha p{
+    font-size: 15px;
+    line-height: 26px;
+    color: #444;
+    margin-bottom: 12px;
+}
+.zadacha a{
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    padding-bottom: 2px;
+    border-bottom: 2px solid rgb(224, 96, 85);
+}
+.konsultaciya{
+    background-color: #111;
+    color: white;
+    margin-top: 86px;
+    display: flex;
+    padding: 42px 0px 46px 116px;
+}
+.konsultaciya_sleva{
+    width: 570px;
+}
+.konsultaciya .nadpis{
+    margin-bottom: 18px;
+}
+.konsultaciya h2{
+    font-family: 'Open Sans', Arial, sans-serif;
+    letter-spacing: -0.03em;
+    font-size: 58px;
+    font-weight: 600;
+    line-height: 60px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.konsultaciya h2 span{
+    display: block;
+    color: rgb(230, 57, 70);
+}
+.konsultaciya_sleva p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #777;
+    width: 450px;
+}
+form{
+    width: 370px;
+}
+.pole_formy{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+form label{
+    font-size: 11px;
+    font-weight: 700;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    font-family: 'Open Sans', Arial, sans-serif;
+}
+input[type='text'], input[type='tel']{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #444;
+    color: white;
+    font-family: inherit;
+    font-size: 15px;
+    padding: 26px 0px 16px;
+    outline: none;
+}
+input:focus{
+    border-color: rgb(230, 57, 70);
+}
+input::placeholder{
+    color: #555;
+}
+#knopka{
+    width: 325px;
+    margin: 13px 0px 0px 21px;
+    background-color: rgb(230, 57, 70);
+    color: white;
+    border: none;
+    padding: 17px 0px;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+.nashi_uslugi{
+    padding-top: 110px;
+}
+.nashi_uslugi h2{
+    font-size: 39px;
+}
+.opisanie{
+    font-size: 15px;
+    line-height: 27px;
+    color: #555;
+    width: 620px;
+    margin-top: 12px;
+}
+.nashi_uslugi .opisanie{
+    padding: 0px 520px 28px 0px;
+    border-bottom: 2px solid #111;
+    width: 100%;
+}
+.nashi_uslugi .zagolovok_bloka{
+    margin: 32px 0px 22px;
+}
+.napravleniya{
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+}
+.napravlenie{
+    width: 370px;
+    padding: 28px 28px 30px;
+}
+.napravlenie:first-child{
+    padding-left: 17px;
+}
+.napravlenie:nth-child(3), .napravlenie:nth-child(6){
+    padding-right: 2px;
+}
+.napravlenie:nth-child(-n+3){
+    min-height: 416px;
+}
+.napravlenie:nth-child(4){
+    padding-left: 0px;
+}
+.napravlenie > span{
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: rgb(224, 96, 85);
+}
+.napravlenie h3{
+    font-size: 23px;
+    line-height: 28px;
+    margin: 14px 0px 16px;
+}
+.napravlenie.temnaya h3{
+    color: rgb(230, 57, 70);
+}
+.napravlenie li{
+    font-size: 15px;
+    line-height: 24px;
+    color: #444;
+    padding-left: 17px;
+    margin-bottom: 11px;
+    position: relative;
+}
+.napravlenie.temnaya li{
+    color: #ddd;
+}
+.napravlenie li::before{
+    content: '—';
+    position: absolute;
+    left: 0px;
+    top: -1px;
+    font-size: 11px;
+    color: rgb(230, 57, 70);
+}
+.napravlenie:nth-child(6) li::before{
+    color: #999;
+}
+.preimushchestva{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 66px;
+    padding-bottom: 62px;
+}
+.preimushchestva_sleva{
+    width: 450px;
+}
+.preimushchestva h2{
+    font-size: 34px;
+    line-height: 46px;
+    margin-bottom: 20px;
+}
+.preimushchestva h2 span, .dlya_kogo li:last-child{
+    color: rgb(224, 96, 85);
+}
+.preimushchestva .opisanie{
+    font-size: 14px;
+    line-height: 26px;
+    width: 400px;
+}
+.preimushchestva ul{
+    width: 558px;
+    border-top: 1px solid #111;
+}
+.preimushchestva li{
+    font-size: 19px;
+    line-height: 30px;
+    color: #222;
+    padding: 24px 0px 26px;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+}
+.preimushchestva li:last-child{
+    border-bottom: none;
+}
+.preimushchestva li::before{
+    content: '';
+    position: absolute;
+    left: -22px;
+    top: 30px;
+    width: 11px;
+    height: 5px;
+    border-left: 2px solid rgb(240, 90, 40);
+    border-bottom: 2px solid rgb(240, 90, 40);
+    transform: rotate(-45deg);
+}
+.dlya_kogo{
+    padding-top: 0px;
+}
+.dlya_kogo h2{
+    border-top: 1px solid #e5e5e5;
+    padding: 62px 520px 0px 0px;
+}
+.dlya_kogo h2, .proekty h2{
+    font-size: 32px;
+}
+.dlya_kogo .opisanie{
+    font-size: 14px;
+    line-height: 27px;
+    margin-top: 18px;
+    width: 520px;
+}
+.dlya_kogo ul{
+    display: flex;
+    align-items: flex-end;
+    border-bottom: 2px solid #555;
+    padding: 18px 0px 20px;
+    margin-top: 0px;
+}
+.dlya_kogo li{
+    font-weight: bold;
+    line-height: 1;
+}
+.dlya_kogo li:nth-child(1){
+    font-size: 19px;
+    width: 231px;
+}
+.dlya_kogo li:nth-child(2){
+    font-size: 26px;
+    width: 324px;
+}
+.dlya_kogo li:nth-child(3){
+    font-size: 32px;
+    width: 175px;
+    margin-right: 103px;
+}
+.dlya_kogo li:nth-child(4){
+    font-size: 38px;
+    width: 200px;
+    margin-bottom: 4px;
+}
+.proekty{
+    padding-top: 132px;
+    padding-bottom: 60px;
+}
+.proekty h2{
+    padding-bottom: 32px;
+    border-bottom: 1px solid #111;
+}
+.keis_klienta{
+    display: flex;
+    padding-top: 44px;
+}
+.keis_sleva{
+    width: 380px;
+    text-align: center;
+}
+.keis_sleva img{
+    width: 328px;
+    display: block;
+    margin: 22px 0px 14px 14px;
+}
+.keis_sleva h4{
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+.keis_sleva p{
+    font-size: 12px;
+    color: #888;
+}
+.keis_sprava{
+    width: 730px;
+}
+.keis_sprava span{
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 12px;
+}
+.keis_sprava p{
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+    margin-bottom: 12px;
+}
+.keis_sprava .zadanie{
+    font-size: 22px;
+    line-height: 32px;
+    color: #111;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 28px;
+}
+@media(max-width:600px){
+    header, section{
+        width: 100%;
+    }
+    header{
+        height: 38px;
+        border: none;
+        border-bottom: 1px solid #111;
+        padding: 0px 20px;
+        justify-content: space-between;
+    }
+    .logotip{
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        margin: 0px;
+    }
+    .logotip span{
+        margin-left: 4px;
+    }
+    nav, .kontakt, .knopka_shapki, .dopolnitelnyy_tekst{
+        display: none;
+    }
+    .burger{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .burger span{
+        width: 22px;
+        height: 2px;
+        background-color: #111;
+    }
+    .glavnaya{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 34px 18px;
+    }
+    .glavnaya_sleva .nadpis{
+        margin: 0px 0px 14px 0px;
+        font-weight: 400;
+        font-size: 9px;
+    }
+    .glavnaya h1{
+        font-size: 31px;
+        line-height: 34px;
+        font-weight: 700;
+        margin-bottom: 22px;
+    }
+    .glavnaya_sleva .knopka{
+        order: 3;
+        margin: 22px 0px 0px;
+        width: 205px;
+        padding: 10px 0px;
+        font-size: 11px;
+    }
+    .podskazka{
+        order: 4;
+        width: 100%;
+        margin: 22px 0px 0px;
+        font-size: 10px;
+        line-height: 17px;
+        color: #999;
+    }
+    .glavnaya_sprava{
+        width: 100%;
+        margin-top: 0px;
+    }
+    .glavnaya_sleva h1{
+        order: 1;
+    }
+    .glavnaya_sleva{
+        display: contents;
+    }
+    .glavnaya_sleva .nadpis{
+        order: 0;
+    }
+    .glavnaya_sprava{
+        order: 2;
+    }
+    .glavnaya_sprava h3{
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+    .glavnaya_sprava li{
+        white-space: normal;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 20px;
+        padding-left: 20px;
+    }
+    .glavnaya_sprava li::before{
+        width: 8px;
+        height: 4px;
+        top: 6px;
+        left: 2px;
+        border-color: rgb(230, 57, 70);
+    }
+    .cifry{
+        flex-wrap: wrap;
+        height: auto;
+        border-left: none;
+        border-right: none;
+    }
+    .cifra, .cifra:last-child{
+        width: 50%;
+        height: 178px;
+        border-left: none;
+        background-size: 100% auto;
+        background-position: center bottom;
+    }
+    #c1, #c3{
+        border-right: 1px solid #111;
+    }
+    #c1, #c2{
+        border-bottom: 1px solid #111;
+    }
+    .cifra b{
+        font-size: 24px;
+        margin-left: 6px;
+    }
+    .cifra span{
+        font-size: 9px;
+        font-weight: 400;
+        margin: 0px 0px 2px 6px;
+    }
+    .chto_takoe{
+        padding: 48px 20px 0px;
+    }
+    .chto_takoe h2{
+        font-size: 19px;
+        line-height: 22px;
+        font-weight: 700;
+        width: 200px;
+        margin: 0px 0px 16px 0px;
+    }
+    .plitki{
+        margin: 0px -3px;
+    }
+    .plitka{
+        width: 50%;
+        height: auto;
+        min-height: 128px;
+        padding: 8px 12px 14px;
+    }
+    .plitka h3{
+        font-size: 13px;
+        font-weight: 700;
+        margin: 0px 0px 6px;
+    }
+    #p4 h3{
+        margin-left: 0px;
+    }
+    .plitka p{
+        font-size: 11px;
+        line-height: 16px;
+        width: 100%;
+    }
+    .plitka::after{
+        top: 0px;
+        height: 16px;
+        width: 2px;
+    }
+    #p3{
+        order: 4;
+    }
+    #p4{
+        order: 3;
+    }
+    #p5{
+        order: 5;
+        min-height: 128px;
+    }
+    #p6{
+        order: 6;
+        padding: 0px 0px 0px 10px;
+    }
+    #p6 .knopka{
+        width: 164px;
+        padding: 8px 0px;
+        font-size: 9px;
+    }
+    .vnutrenniy_blok{
+        padding: 0px 20px;
+    }
+    .pomoshch{
+        padding-top: 58px;
+    }
+    .pomoshch h2{
+        padding-right: 0px;
+        font-size: 22px;
+        line-height: 28px;
+        border-bottom: 1px solid #111;
+        padding-bottom: 34px;
+    }
+    .zagolovok_bloka{
+        margin: 0px 0px 22px;
+    }
+    .pomoshch .zagolovok_bloka{
+        margin-top: -6px;
+        background-color: white;
+    }
+    .zagolovok_bloka span{
+        font-size: 11px;
+        background-color: white;
+    }
+    .zagolovok_bloka a{
+        font-size: 11px;
+    }
+    .tri_zadachi{
+        display: block;
+    }
+    .zadacha, .zadacha + .zadacha{
+        width: 100%;
+        padding: 0px 0px 24px;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 26px;
+    }
+    .zadacha span{
+        font-size: 10px;
+        margin-top: 0px;
+    }
+    .zadacha h3{
+        font-size: 18px;
+        margin: 8px 0px 12px;
+    }
+    .zadacha p{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .konsultaciya{
+        display: block;
+        margin-top: 16px;
+        padding: 32px 17px 28px;
+    }
+    .konsultaciya_sleva, .konsultaciya_sleva p, form{
+        width: 100%;
+    }
+    .konsultaciya .nadpis{
+        font-size: 8px;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+    .konsultaciya h2{
+        font-size: 27px;
+        line-height: 29px;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+    .konsultaciya_sleva p{
+        width: 270px;
+        font-size: 10px;
+        line-height: 18px;
+        color: #aaa;
+        margin-bottom: 28px;
+    }
+    .pole_formy{
+        margin-bottom: 14px;
+    }
+    form label{
+        font-size: 8px;
+        font-weight: 400;
+    }
+    input[type='text'], input[type='tel']{
+        font-size: 12px;
+        padding: 10px 0px 6px;
+    }
+    input::placeholder{
+        color: #aaa;
+    }
+    #knopka{
+        width: 100%;
+        margin: 8px 0px 0px;
+        padding: 13px 0px;
+        font-size: 10px;
+    }
+    .nashi_uslugi{
+        padding-top: 88px;
+    }
+    .nashi_uslugi h2{
+        font-size: 24px;
+    }
+    .opisanie, .nashi_uslugi .opisanie{
+        font-size: 14px;
+        line-height: 26px;
+        width: 100%;
+    }
+    .nashi_uslugi .opisanie{
+        padding: 0px 0px 28px;
+    }
+    .nashi_uslugi .zagolovok_bloka{
+        margin: 22px 0px 0px;
+    }
+    .nashi_uslugi .zagolovok_bloka a{
+        display: none;
+    }
+    .napravleniya{
+        display: block;
+        border-bottom: none;
+    }
+    .napravlenie, .napravlenie:nth-child(-n+3){
+        width: 100%;
+        min-height: 0px;
+        padding: 18px 0px 14px;
+    }
+    .napravlenie.temnaya{
+        padding: 16px 15px 22px;
+        margin: 0px 0px 4px;
+    }
+    .napravlenie li{
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 10px;
+    }
+    .napravlenie h3{
+        font-size: 18px;
+        line-height: 24px;
+        margin: 8px 0px 14px;
+    }
+    .napravlenie:nth-child(6){
+        border-bottom: 1px solid #ddd;
+    }
+    .preimushchestva{
+        display: block;
+        padding-top: 40px;
+    }
+    .preimushchestva_sleva, .preimushchestva .opisanie, .preimushchestva ul{
+        width: 100%;
+    }
+    .preimushchestva h2{
+        font-size: 24px;
+        line-height: 31px;
+        margin-bottom: 24px;
+    }
+    .preimushchestva .opisanie{
+        padding-bottom: 20px;
+    }
+    .preimushchestva ul{
+        border-top: 2px solid #555;
+    }
+    .preimushchestva li{
+        font-size: 16px;
+        line-height: 24px;
+        padding: 20px 0px 22px;
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .preimushchestva li:last-child{
+        border-bottom: 1px solid #e5e5e5;
+    }
+    .preimushchestva li::before{
+        left: -12px;
+        top: 23px;
+        width: 7px;
+        height: 3px;
+        border-width: 1px;
+        border-color: rgb(230, 57, 70);
+    }
+    .dlya_kogo{
+        padding-top: 54px;
+    }
+    .dlya_kogo h2{
+        border-top: none;
+        padding: 0px;
+        font-size: 24px;
+        line-height: 28px;
+        width: 250px;
+    }
+    .dlya_kogo .opisanie{
+        font-size: 12px;
+        line-height: 24px;
+        width: 100%;
+        margin-top: 12px;
+    }
+    .dlya_kogo ul{
+        display: block;
+        padding: 0px;
+        margin-top: 12px;
+        border-bottom: 1px solid #555;
+    }
+    .dlya_kogo li, .dlya_kogo li:nth-child(n){
+        width: 100%;
+        margin: 0px;
+        border-top: 1px solid #ddd;
+        padding: 14px 0px;
+    }
+    .dlya_kogo li:nth-child(1){
+        font-size: 18px;
+    }
+    .dlya_kogo li:nth-child(2){
+        font-size: 22px;
+    }
+    .dlya_kogo li:nth-child(3){
+        font-size: 25px;
+    }
+    .dlya_kogo li:nth-child(4){
+        font-size: 30px;
+    }
+    .proekty{
+        padding-top: 64px;
+        padding-bottom: 40px;
+    }
+    .proekty h2{
+        font-size: 24px;
+        padding-bottom: 16px;
+        margin: 0px 2px;
+    }
+    .keis_klienta{
+        display: block;
+        padding: 36px 2px 0px;
+    }
+    .keis_sleva{
+        width: 100%;
+        text-align: left;
+    }
+    .keis_sleva img{
+        width: 140px;
+        margin: 0px 0px 24px 0px;
+    }
+    .keis_sleva h4{
+        margin-bottom: 8px;
+    }
+    .keis_sleva p{
+        font-size: 11px;
+        margin-bottom: 30px;
+    }
+    .keis_sprava{
+        width: 100%;
+    }
+    .keis_sprava span{
+        font-size: 11px;
+    }
+    .keis_sprava .zadanie{
+        font-size: 17px;
+        line-height: 26px;
+        padding-bottom: 22px;
+        margin-bottom: 20px;
+    }
+    .keis_sprava p{
+        font-size: 15px;
+        line-height: 26px;
+    }
+}
